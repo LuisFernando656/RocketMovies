@@ -5,8 +5,14 @@ export const Container = styled.div`
 
   display: flex;
   align-items: center;
-  gap: 0.8rem;
   margin-bottom: 2.4rem;      
+
+  max-width: 115.5rem;
+  margin-inline: auto;
+  
+  > svg {
+    margin-right: 0.8rem;
+  }
 
   a {
     color: ${({theme}) => theme.COLORS.PINK};

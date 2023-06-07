@@ -8,23 +8,33 @@ export const Container = styled.div`
   grid-template-rows: 11.6rem auto;
   grid-template-areas: 
   'header'
+  'back'
   'content';
 
   overflow: hidden;
 
+
+
   > main {
     grid-area: content;
     overflow-y: auto;
-    padding: 4rem 0;
+    ::-webkit-scrollbar-track {
+    background: red; /* Cor do fundo */
+    }
   }
   `
 
 export const Content = styled.div`
-  max-width: 83.7rem;
+  max-width: 113.7rem;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   > p {
     text-align: justify ;
@@ -69,4 +79,10 @@ export const CreatorDate = styled.div `
 
     margin: 0 .8rem;
   }
+`
+
+export const BackContent = styled.div`   
+  grid-area: back;
+  margin-top: 4rem;
+  width: 100%;
 `
