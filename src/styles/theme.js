@@ -11,6 +11,7 @@ export default {
     TX_300: '#E5E5E5',
     TX_400: '#999591',
     BD_HEAD: '#3E3B47',
+    TX_P: '#CAC4CF',
 
     PINK: '#FF859B',
     PINK_005: 'rgba(255, 133, 155, 0.05)'

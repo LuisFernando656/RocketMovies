@@ -13,20 +13,21 @@ export const Container = styled.div`
 
   overflow: hidden;
 
-
-
+  
+  
   > main {
-    grid-area: content;
-    overflow-y: auto;
-    ::-webkit-scrollbar-track {
-    background: red; /* Cor do fundo */
-    }
+    max-width: 113.7rem;
+    margin: 0 auto;
   }
   `
 
 export const Content = styled.div`
-  max-width: 113.7rem;
-  margin: 0 auto;
+  grid-area: content;
+
+  height: 63rem;
+  padding-right: .8rem;
+
+  overflow-y: auto;
 
   display: flex;
   flex-direction: column;
