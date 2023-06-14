@@ -36,10 +36,6 @@ export const Form = styled.form`
     margin-bottom: 4.8rem;
   }
 
-  > div {
-    margin-bottom: .8rem;
-  }
-
   > div:last-child {
     margin: 4.2rem auto;
   }

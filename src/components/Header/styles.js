@@ -19,6 +19,10 @@ export const Container = styled.div`
     color:  ${({theme}) => theme.COLORS.PINK};
     margin-right: 6.4rem;
   }
+
+  > div {
+    margin-bottom: 0;
+  }
 `
 
 export const Profile = styled.div`

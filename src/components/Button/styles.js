@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.button`
   width: 100%;
   background-color: ${({theme}) => theme.COLORS.PINK};
-  color: ${({ theme }) => theme.COLORS.BG_900};
+  color: ${({ theme }) => theme.COLORS.BG_600};
 
   height: 4.8rem;
   border: 0;
