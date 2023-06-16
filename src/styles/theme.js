@@ -4,7 +4,6 @@ export default {
     BG_800: '#262529',
     BG_700: '#282124',
     BG_600: '#312E38;',
-
     
     TX_WHITE: '#F4EDE8' ,
     TX_200: '#948F99',
@@ -14,6 +13,7 @@ export default {
     TX_P: '#CAC4CF',
 
     PINK: '#FF859B',
-    PINK_005: 'rgba(255, 133, 155, 0.05)'
+    PINK_005: 'rgba(255, 133, 155, 0.05)',
+    BLACK: '#0D0C0F'
   }
 }

@@ -25,7 +25,7 @@ export const Content = styled.div`
   grid-area: content;
 
   height: 63rem;
-  padding-right: .8rem;
+  padding-right: 1.6rem;
 
   overflow-y: auto;
 
