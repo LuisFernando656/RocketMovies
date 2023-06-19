@@ -8,6 +8,8 @@ export const Container = styled.textarea`
 
   border-radius: 1rem;
 
+  text-align: justify;
+
   background: ${({theme}) => theme.COLORS.BG_800};
   color: ${({theme}) => theme.COLORS.TX_WHITE};
 

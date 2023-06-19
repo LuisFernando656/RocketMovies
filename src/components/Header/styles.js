@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -13,11 +14,14 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 12.3rem;
 
+  a {
+    color:  ${({theme}) => theme.COLORS.PINK};
+    margin-right: 6.4rem;
+  }
+
   > h2 {
     font-size: 2.4rem;
     line-height: 3.2rem;
-    color:  ${({theme}) => theme.COLORS.PINK};
-    margin-right: 6.4rem;
   }
 
   > div {
@@ -25,7 +29,7 @@ export const Container = styled.div`
   }
 `
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
   width: auto;
   display: flex;
   align-items: center;

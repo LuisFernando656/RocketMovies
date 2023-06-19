@@ -2,7 +2,7 @@ import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera} from 'react-icons/fi'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
-import { Link } from '../../components/Link'
+import { LinkA } from '../../components/LinkA'
 
 import {Avatar, Container, Form } from './styles'
 
@@ -10,7 +10,7 @@ export function Profile() {
   return(
     <Container>
       <header>
-        <Link title='Voltar' href='./' icon={FiArrowLeft}/>   
+        <LinkA title='Voltar' to='/' icon={FiArrowLeft}/>   
       </header>
 
       <Form>

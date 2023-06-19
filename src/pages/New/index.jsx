@@ -3,7 +3,7 @@ import { Container, Form, MovieItemsContainer } from "./styles";
 import { FiArrowLeft } from 'react-icons/fi'
 
 import { Header } from '../../components/Header'
-import { Link } from '../../components/Link'
+import { LinkA } from '../../components/LinkA'
 import { Textarea } from '../../components/Textarea'
 import { MovieItem } from "../../components/MovieItem";
 import { Button } from '../../components/Button'
@@ -14,11 +14,11 @@ export function New() {
       <Header/>
 
       <main>
-      <Link href='./' title='Voltar' icon={FiArrowLeft}/>
+      <LinkA to='/' title='Voltar' icon={FiArrowLeft}/>
 
       <Form className="custom-scrollbar">
         <h1>Novo Filme</h1>
-        <Textarea placeholder='Observaçãoes'/>
+        <Textarea className='custom-scrollbar' placeholder='Observaçãoes'/>
 
         <h2>Marcadores</h2> 
 

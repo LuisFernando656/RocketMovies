@@ -1,6 +1,6 @@
 import { Container, Content, TitleRate, CreatorDate, BackContent } from "./styles"
 import { Header } from '../../Components/Header'
-import { Link } from '../../components/Link'
+import { LinkA } from '../../components/LinkA'
 import { Rate } from '../../components/Rate'
 import { Tag } from '../../components/Tag'
 import { FiArrowLeft, FiClock } from 'react-icons/fi'
@@ -11,7 +11,7 @@ export function MoviePreview() {
       <Header/>
         <main>
           <BackContent>
-            <Link href='/' icon={FiArrowLeft} title='Voltar'/>
+            <LinkA href='/' icon={FiArrowLeft} title='Voltar'/>
           </BackContent>
           <Content className="custom-scrollbar">
             <TitleRate>

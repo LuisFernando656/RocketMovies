@@ -1,4 +1,5 @@
 import styled from 'styled-components'  
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   width: 100%;
@@ -31,7 +32,7 @@ export const TitleAndButton = styled.div`
   align-items: center;
   justify-content: space-between;
   `
-export const NewMovie = styled.button`
+export const NewMovie = styled(Link)`
   background-color: ${({theme}) => theme.COLORS.PINK};
   color: ${({ theme }) => theme.COLORS.BG_900};
   
@@ -39,7 +40,6 @@ export const NewMovie = styled.button`
   align-items: center;
   
   height: 4.8rem;
-  border: 0;
   padding: 1.35rem 3.2rem;
   border-radius: 1rem;
   
