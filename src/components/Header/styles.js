@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -29,7 +28,7 @@ export const Container = styled.div`
   }
 `
 
-export const Profile = styled(Link)`
+export const Profile = styled.div`
   width: auto;
   display: flex;
   align-items: center;
@@ -46,20 +45,27 @@ export const Profile = styled(Link)`
     font-size: 1.4rem;
     line-height: 1.8rem;
 
-    strong {
+    a {
       font-weight: 700;
+      margin: 0;
     }
 
-    span {
+    button {
       color:  ${({theme}) => theme.COLORS.TX_200};
       text-align: end;
+      font-size: 1.4rem;
     }
   }
 
-  > img {
-    width: 6.4rem;
-    height: 6.4rem;
-    border-radius: 50%;
-    border: 1px solid ${({theme}) => theme.COLORS.BD_HEAD};
+  a {
+    margin-right: 0;
+
+    > img {
+      width: 6.4rem;
+      height: 6.4rem;
+      border-radius: 50%;
+      border: 1px solid ${({theme}) => theme.COLORS.BD_HEAD};
+    }
   }
+
 `
