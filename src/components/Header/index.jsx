@@ -1,9 +1,24 @@
 import { Container, Profile } from "./styles";
 import { Input } from '../Input'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ButtonText } from '../ButtonText'
 
+import { useAuth } from "../../hooks/auth";
+
 export function Header() {
+
+  const { signOut } = useAuth()
+  const navigate = useNavigate()
+
+  function handleLogout() {
+    const confirm = window.confirm('Tem certeza que deseja sair?')
+
+    if(confirm) {
+      navigate('/')
+      signOut()
+    }
+  }
+
   return ( 
     <Container>
       <Link to='/'>
@@ -13,7 +28,7 @@ export function Header() {
       <Profile >
         <div>
           <Link to='/profile'>Luis Fernando</Link>
-          <ButtonText title='sair'></ButtonText> 
+          <ButtonText onClick={handleLogout} title='sair'></ButtonText> 
         </div>
         <Link to='/profile'>
           <img src="https://github.com/luisfernando656.png" alt="Imagem do Usuário" />
