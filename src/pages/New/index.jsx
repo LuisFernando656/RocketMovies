@@ -1,4 +1,4 @@
-import { Container, Form, MovieItemsContainer } from "./styles";
+import { Container, Form, MovieItemsContainer, MovieCreate } from "./styles";
 
 import { FiArrowLeft } from 'react-icons/fi'
 
@@ -7,6 +7,7 @@ import { LinkA } from '../../components/LinkA'
 import { Textarea } from '../../components/Textarea'
 import { MovieItem } from "../../components/MovieItem";
 import { Button } from '../../components/Button'
+import { Input } from "../../components/Input";
 
 export function New() {
   return (
@@ -16,9 +17,14 @@ export function New() {
       <main>
       <LinkA to='/' title='Voltar' icon={FiArrowLeft}/>
 
-      <Form className="custom-scrollbar">
+      <Form>
+        <MovieCreate className="custom-scrollbar">
         <h1>Novo Filme</h1>
-        <Textarea className='custom-scrollbar' placeholder='Observaçãoes'/>
+        <div>
+        <Input placeholder='Nome'/>
+        <Input placeholder='Sua nota (de 0 a 5)'/>
+        </div>
+        <Textarea  placeholder='Observaçãoes'/>
 
         <h2>Marcadores</h2> 
 
@@ -26,6 +32,7 @@ export function New() {
           <MovieItem value='React'/>
           <MovieItem isNew placeholder='Novo Marcador'/>
         </MovieItemsContainer>
+        </MovieCreate>
 
         <div>
           <Button title='Excluir Filme'/>

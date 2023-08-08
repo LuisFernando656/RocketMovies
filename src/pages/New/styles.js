@@ -14,19 +14,18 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   width: 100%;
-  height: 65rem;
-
-  overflow-y: auto;
   padding-right: 1.6rem;
+  height: 100%;
+
  
-  > h1 {
+   h1 {
     margin-bottom: 4rem;
     font-weight: 500;
     font-size: 3.6rem;
     line-height: 4.7rem;
   }
 
-  > h2 {
+   h2 {
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.6rem;
@@ -39,6 +38,7 @@ export const Form = styled.form`
   > div:last-child {
     display: flex;
     align-items: center;
+    margin-top: 4rem;
 
     button:first-child {
       margin-right: 4rem;
@@ -57,7 +57,32 @@ export const MovieItemsContainer = styled.div`
 
   border-radius: .8rem;
   padding: 1.6rem 1.6rem 0;
-  margin-bottom: 4rem;
 
   background: ${({theme}) => theme.COLORS.BLACK};
+`
+
+export const MovieCreate = styled.div`
+  overflow-y: auto;
+  height: 56rem;
+
+  padding-right: 0.8rem;
+
+  textarea {
+    margin-top: 4rem;
+  }
+
+  > div:nth-child(2) {
+    
+    display: flex;
+    gap: 4rem;
+    
+    input {
+      color: ${({theme}) => theme.COLORS.TX_WHITE};
+      font-size: 1.6rem; 
+
+      &::placeholder {
+        color: ${({theme}) => theme.COLORS.TX_200};
+      }
+    }
+  }
 `

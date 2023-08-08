@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 24rem;
+  height: 100%;
 
   display: flex;
   align-items: center;
@@ -11,9 +12,9 @@ export const Container = styled.div`
   margin-bottom: 1.6rem;
 
   color: ${({ theme }) => theme.COLORS.TX_WHITE};
-  background: ${({ theme, isNew }) => isNew ? 'transparent' : theme.COLORS.BG_800};
+  background: ${({ theme, $isNew }) => $isNew ? 'transparent' : theme.COLORS.BG_800};
   
-  border: ${({ theme, isNew }) => isNew ? `2px dashed ${theme.COLORS.TX_200}` : 'none'};
+  border: ${({ theme, $isNew }) => $isNew ? `2px dashed ${theme.COLORS.TX_200}` : 'none'};
   border-radius: 1rem;
   
   button {
