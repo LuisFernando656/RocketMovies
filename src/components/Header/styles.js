@@ -13,7 +13,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 12.3rem;
 
-  a {
+  > a {
     color:  ${({theme}) => theme.COLORS.PINK};
     margin-right: 6.4rem;
   }
@@ -47,7 +47,7 @@ export const Profile = styled.div`
 
     a {
       font-weight: 700;
-      margin: 0;
+      color:  ${({theme}) => theme.COLORS.PINK};
     }
 
     button {
@@ -58,7 +58,6 @@ export const Profile = styled.div`
   }
 
   a {
-    margin-right: 0;
 
     > img {
       width: 6.4rem;
