@@ -1,5 +1,5 @@
 import { Container, Content, TitleRate, CreatorDate, BackContent } from "./styles"
-import { Header } from '../../Components/Header'
+import { Header } from '../../components/Header'
 import { LinkA } from '../../components/LinkA'
 import { Rate } from '../../components/Rate'
 import { Tag } from '../../components/Tag'
