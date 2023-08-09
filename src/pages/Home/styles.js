@@ -23,7 +23,7 @@ export const Container = styled.div`
 export const TitleAndButton = styled.div`
   grid-area: 'titleandbutton';
   
-  width: 113.6rem;
+  width: 100%;
 
   margin-top: 4.7rem;
   margin-bottom: 3.7rem ;

@@ -41,6 +41,13 @@ export const Content = styled.div`
     text-align: justify ;
     margin-top: 4rem;
   }
+
+  > button:last-child {
+    color: ${({theme}) => theme.COLORS.PINK};    
+    background: ${({theme}) => theme.COLORS.BLACK};
+
+    margin-top: 4rem;
+  }
 `
 
 export const TitleRate = styled.div`

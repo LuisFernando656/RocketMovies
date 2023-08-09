@@ -21,7 +21,7 @@ export function New() {
   const [grade, setGrade] = useState('')
 
   const [tags, setTags] = useState([])
-  const [newTag, setNewTag] = useState([])
+  const [newTag, setNewTag] = useState('')
 
   const navigate = useNavigate()
 
@@ -113,10 +113,9 @@ export function New() {
         </MovieItemsContainer>
         </MovieCreate>
 
-        <div>
-          <Button title='Excluir Filme'/>
+     
+          
           <Button title='Salvar alterações' onClick={handleNewNote}/>
-        </div>
       </Form>
       </main>
     </Container>

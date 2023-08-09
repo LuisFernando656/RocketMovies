@@ -35,17 +35,9 @@ export const Form = styled.form`
     margin: 4rem 0 2.4rem;
   }
 
-  > div:last-child {
-    display: flex;
-    align-items: center;
+  > button:last-child {
     margin-top: 4rem;
-
-    button:first-child {
-      margin-right: 4rem;
-      
-      background: ${({theme}) => theme.COLORS.BLACK};
-      color: ${({theme}) => theme.COLORS.PINK};
-    }
+    margin-right: 4rem;
   }
 `
 
