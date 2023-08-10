@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100vh;
 
   > main {
-    max-width: 113.7rem;
+    max-width: 100%;
     margin: 4rem auto;
 
     overflow: hidden;
@@ -13,9 +13,11 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-  width: 100%;
+  width: 80%;
   padding-right: 1.6rem;
   height: 100%;
+
+  margin : 0 auto;
 
  
    h1 {

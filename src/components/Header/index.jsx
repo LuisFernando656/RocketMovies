@@ -28,7 +28,9 @@ export function Header() {
       <Link to='/'>
       <h2>RocketMovies</h2>
       </Link>
-      <Input placeholder='Pesquisar pelo título'/>
+      <Input
+       placeholder='Pesquisar pelo título'
+      />
       <Profile >
         <div>
           <Link to='/profile'>{user.name}</Link>

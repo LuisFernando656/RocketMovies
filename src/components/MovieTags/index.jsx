@@ -7,23 +7,26 @@ export function MovieTags({data, ...rest}) {
   return (
     <Container {...rest}>
       <h2>{data.title}</h2>
-      <Rate/>
+      <Rate grade={data.grade}/>
 
-      <TextTruncate
-      line={2}
-      element="p"
-      truncateText="..."
-      text={data.description}
-    />
+      {data.description && (
+        <TextTruncate
+        line={2}
+        element="p"
+        truncateText="..."
+        text={data.description}
+        />
+      )
+      }
  
       {
-        data.tags &&
-        <footer>
-          {
-            data.tags.map(tag => <Tag key={tag.id} title={tag.name} />
-            )
-          }
-        </footer>
+        data.tags && data.tags.length > 0 && (
+          <footer>
+            {data.tags.map(tag => (
+              <Tag key={tag.id} title={tag.name} />
+            ))}
+          </footer>
+        )
       }
 
     </Container>

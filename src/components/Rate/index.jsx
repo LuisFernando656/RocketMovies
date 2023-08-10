@@ -1,14 +1,17 @@
-import { FiStar } from 'react-icons/fi'  
-import { Container } from './styles.js'
+import { Container , RatingStars} from './styles.js'
 
-export function Rate() {
+export function Rate({grade}) {
+  const lengthstar = 5
+  const stars = Array.from({length: lengthstar})
+
   return(
     <Container>
-      <FiStar className='on'/>
-      <FiStar className='on'/>
-      <FiStar className='on'/>
-      <FiStar className='on'/>
-      <FiStar/>
+      {
+        stars.map((star, index) => (
+          <RatingStars key={index} $active={index < grade}/>
+        ))
+      }
+
     </Container>
   )
 }

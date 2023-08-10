@@ -30,8 +30,12 @@ export function New() {
       return
     }
 
-    setTags(prevState => [...prevState, newTag])
-    setNewTag('')
+    if(!tags.includes(newTag)) {
+      setTags(prevState => [...prevState, newTag])
+      setNewTag('')
+    }else {
+      alert('Essa tag ja existe')
+    }
   }
 
   function handleRemoveTag(deleted) {
@@ -71,9 +75,9 @@ export function New() {
       <Header/>
 
       <main>
-      <LinkA to='/' title='Voltar' icon={FiArrowLeft}/>
 
       <Form>
+        <LinkA to='/' title='Voltar' icon={FiArrowLeft}/>
         <MovieCreate className="custom-scrollbar">
         <h1>Novo Filme</h1>
         <div>
