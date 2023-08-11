@@ -19,6 +19,9 @@ export const Form = styled.form`
 
   margin : 0 auto;
 
+  a {
+    margin-bottom: 2.4rem;
+  }
  
    h1 {
     margin-bottom: 4rem;

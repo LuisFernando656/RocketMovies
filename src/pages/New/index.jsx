@@ -13,12 +13,13 @@ import { api } from '../../services/api'
 
 import { useNavigate } from "react-router-dom";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function New() {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [grade, setGrade] = useState('')
+  const [titles, setTitles] = useState({})
 
   const [tags, setTags] = useState([])
   const [newTag, setNewTag] = useState('')
@@ -47,6 +48,10 @@ export function New() {
       return alert('Titúlo necessario')
     }
 
+    if(titles.includes(title)) {
+      return alert('Esse titúlo ja foi usado')
+    }
+
     if(!grade) {
       return alert('Nota necessaria')
     }
@@ -69,6 +74,16 @@ export function New() {
     alert('Nota de filme criado com sucesso')
     navigate('/')
   }
+
+  useEffect(() => {
+    async function fetchTitle() {
+        const response = await api.get('/notes?title'); 
+        const fetchedTitles = response.data.map(note => note.title)
+        setTitles(fetchedTitles)
+    }
+
+    fetchTitle()
+  },[])
 
   return (
     <Container>
