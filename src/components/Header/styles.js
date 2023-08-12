@@ -23,8 +23,17 @@ export const Container = styled.div`
     line-height: 3.2rem;
   }
 
-  > div {
-    margin-bottom: 0;
+   > div:nth-child(2) {
+     display: flex;
+     flex-direction: column;
+
+     width: 100%;
+
+     position: relative;
+
+     > div:nth-child(1) {
+      margin-bottom: .2rem;
+     }
   }
 `
 

@@ -43,7 +43,7 @@ export function MoviePreview() {
     }
 
     fetchNotes()
-  }, [])
+  }, [params.id])
 
   return(
     <Container>
